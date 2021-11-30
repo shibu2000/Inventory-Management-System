@@ -132,7 +132,7 @@ class login:
                             "Success", f"Email Send to\n{self.email[0]}", parent=self.root)
 
                         self.forget_win = Toplevel(self.root)
-                        self.forget_win.geometry("455x606+746+100")
+                        self.forget_win.geometry("455x606+744+49")
                         self.forget_win.title("Inventory Management System")
                         self.forget_win.config(bg="white")
                         self.forget_win.focus_force()

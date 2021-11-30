@@ -13,6 +13,7 @@ class supplierClass:
     def __init__(self, root):
         self.root = root
         self.root.geometry("1100x500+240+140")
+        self.root.resizable(False, False)
         self.root.title("Inventory Management System | Supplier Window")
         self.root.config(bg="white")
         self.root.focus_force()

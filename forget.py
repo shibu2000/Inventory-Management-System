@@ -8,6 +8,7 @@ class forget:
     def __init__(self, root):
         self.root = root
         self.root.geometry("455x606+746+100")
+        self.root.resizable(False, False)
         self.root.title("Inventory Management System")
         self.root.config(bg="white")
 
