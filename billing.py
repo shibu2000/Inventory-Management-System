@@ -285,7 +285,7 @@ class billing:
 
         sub_productFrame4_2.place(x=0, y=445, width=360, height=105)
 
-        self.lbl_billAmnt = Label(sub_productFrame4_2, text="Bill Ammount\n0", font=(
+        self.lbl_billAmnt = Label(sub_productFrame4_2, text="Bill Amount\n0", font=(
             "Times New Roman", 11, "bold"), bg="#C85C5C")
         self.lbl_billAmnt.place(x=0, y=0, width=125, height=55)
         self.lbl_discount = Label(sub_productFrame4_2, text="Discount\n5%", font=(
@@ -559,8 +559,8 @@ class billing:
                     status = 'INACTIVE'
                 else:
                     status = 'ACTIVE'
-                price = float(row[3])*int(row[2])
-                price = str(price)
+                # price = float(row[3])*int(row[2])
+                price = str(row[2])
                 self.txt_billArea.insert(
                     END, "\n  "+name+"\t\t"+qty+"\tRs."+price)
                 # =========Update Quantity in product table=================
